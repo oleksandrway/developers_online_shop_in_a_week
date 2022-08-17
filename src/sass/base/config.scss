@@ -1,3 +1,27 @@
+$color-blue-dark: #67aefc;
+$color-blue-light: #daecff;
+
+$color-gray: #484848;
+$color-gray-dark: #111111;
+
+$color-green: #6bd75f;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
 body {
-  background-color: orange;
+  font-family: "Montserrat", sans-serif;
+
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.6;
 }
