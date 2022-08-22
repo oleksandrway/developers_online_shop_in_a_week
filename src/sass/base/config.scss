@@ -1,10 +1,10 @@
-$color-blue-dark: #67aefc;
-$color-blue-light: #daecff;
-
-$color-gray: #484848;
-$color-gray-dark: #111111;
-
-$color-green: #6bd75f;
+:root {
+  --color-blue-dark: #67aefc;
+  --color-blue-light: #daecff;
+  --color-gray: #484848;
+  --color-gray-dark: #111111;
+  --color-green: #75e169;
+}
 
 *,
 *:before,
@@ -16,6 +16,10 @@ $color-green: #6bd75f;
 
 html {
   font-size: 62.5%; // 1rem = 10px
+
+  @screen <sm {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -24,4 +28,10 @@ body {
   color: #000000;
   font-weight: 400;
   line-height: 1.6;
+}
+
+.container {
+  max-width: 122rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
 }
