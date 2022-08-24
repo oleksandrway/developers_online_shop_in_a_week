@@ -14,23 +14,32 @@
 
 <body>
 
-  <header class="   text-white  py-1.7rem  bg-[var(--color-blue-dark)] ">
+  <header class="   text-white  py-1.7rem  bg-[var(--color-blue-dark)] relative <md:py-0">
     <div class="container flex justify-between items-center">
-      <img src="/logo.svg" alt="" class="header__logo max-w-24rem ">
+      <img src="/logo.svg" alt="" class="header__logo max-w-24rem <md:max-w-13.5rem ">
       <nav>
-        <ul class="header__menu menu flex gap-3.8rem items-center text-base-1.6rem <sm:hidden">
-          <li class="menu-item">Услуги</li>
-          <li class="menu-item">Портфолио</li>
-          <li class="menu-item">Этапы</li>
-          <li class="menu-item">Дизайнеры</li>
-          <li class="menu-item">
+        <ul
+          class="header__menu menu flex gap-3.8rem items-stretch align-middle text-base-1.6rem <lg:mr-2rem overflow-hidden h-5rem">
+          <li class="menu-item flex items-center">
+            <a href="#">Услуги</a>
+          </li>
+          <li class="menu-item flex items-center">
+            <a href="#">Портфолио</a>
+          </li>
+          <li class="menu-item flex items-center">
+            <a href="#">Этапы</a>
+          </li>
+          <li class="menu-item flex items-center">
+            <a href="#">Дизайнеры</a>
+          </li>
+          <li class="menu-item <lg:hidden flex items-center">
             <button class="btn  py-1rem px-4rem ">Заказать</button>
           </li>
         </ul>
+        <button class="menu-btn  mr-0.8rem  hidden py-2rem  <md:flex <md:gap-0.5rem">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
-      <button class="menu-btn backface-hidden">
-        <span></span><span></span><span></span>
-      </button>
 
     </div>
   </header>
