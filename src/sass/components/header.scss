@@ -37,13 +37,11 @@
         width: 0;
         height: 2px;
         background-color: #fff;
-        transition: all 0.5s;
+        transition: all 0.4s;
       }
     }
     &:hover {
       a {
-        // border-bottom: 2px solid #fff;
-        // line-height: 1.5;
         &:after {
           width: 100%;
         }
