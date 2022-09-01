@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/src/itc-slider/itc-slider.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -164,7 +165,105 @@
       </div>
     </div>
   </section>
-  <div class="divider h-20rem"></div>
+  <section class="stages">
+    <div class="container container-stages">
+      <h2 class="title-2 mb-6.4rem <lg:mb-2rem  <md:mb-1rem">Этапы разработки интернет-магазина</h2>
+      <img src="/stages/circle.png" alt="circle" class="circle">
+      <img src="/stages/sheet.png" alt="sheet" class="sheet">
+
+      <div class="stages__slider slider " data-slider="itc-slider">
+        <div class="stages__slider-wrapper slider__wrapper">
+          <div class="stages__slider-items slider__items">
+
+            <div class="stages__slider-item slider__item ">
+              <div class="stages-card">
+                <div class="stage-card__text">
+                  <h3 class="stages-card__title">1. Анализ</h3>
+                  <div class="stages-card__desc">Для того, чтобы онлайн-магазин приносил выгоду, перед его запуском
+                    необходимо
+                    провести анализ других предложений рынка, оценить конкурентов и найти наиболее удобное решение.
+                  </div>
+                </div>
+                <img src="/stages/slider/analysis.png" alt="square" class="stages-card__img">
+              </div>
+            </div>
+
+            <div class="stages__slider-item slider__item ">
+              <div class="stages-card">
+                <div class="stage-card__text">
+                  <h3 class="stages-card__title">2. Визуальное решение</h3>
+                  <div class="stages-card__desc">Разработка дизайна ключевых страниц магазина – главная, каталог,
+                    информационные разделы, раздел корзины, товаров. Для нас главное – передать настроение бренда,
+                    сделать
+                    удобный сайт. </div>
+                </div>
+                <img src="/stages/slider/visual-decision.png" alt="square" class="stages-card__img">
+              </div>
+            </div>
+            <div class="stages__slider-item slider__item ">
+              <div class="stages-card">
+                <div class="stage-card__text">
+                  <h3 class="stages-card__title">3. Техническая реализация </h3>
+                  <div class="stages-card__desc">После утверждения дизайн-макета наступает следующий этап – верстка. Это
+                    трудоемкий процесс: программисты должны все тщательно прописать, чтобы не допустить технических
+                    ошибок.
+                  </div>
+                </div>
+                <img src="/stages/slider/technological-implementation.png" alt="square" class="stages-card__img">
+              </div>
+            </div>
+            <div class="stages__slider-item slider__item ">
+              <div class="stages-card">
+                <div class="stage-card__text">
+                  <h3 class="stages-card__title">4. Наполнение контентом </h3>
+                  <div class="stages-card__desc">Создание и публикация текстов, а также видео материала. Хороший контент
+                    и
+                    качественные фотографии привлекают больше посетителей и помогают клиенту лучше ознакомиться с
+                    ассортиментом. </div>
+                </div>
+                <img src="/stages/slider/content-filling.png" alt="square" class="stages-card__img">
+              </div>
+            </div>
+            <div class="stages__slider-item slider__item ">
+              <div class="stages-card">
+                <div class="stage-card__text">
+                  <h3 class="stages-card__title">5. Тестирование</h3>
+                  <div class="stages-card__desc">Составление плана тестирования для определения ошибок. Проверка работы
+                    сайта
+                    и визуального восприятия для улучшения сайта. Также используются чек-листы для четкого определения
+                    ошибок
+                    и их устранения.</div>
+                </div>
+                <img src="/stages/slider/testing.png" alt="square" class="stages-card__img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <button class="slider__control slider-btn slider-btn--left " data-slide="prev"></button>
+        <button class="slider__control slider-btn slider-btn--right" data-slide="next"></button>
+      </div>
+
+      <!-- <button class="left slider-btn">
+        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </button>
+      <button class="right slider-btn">
+        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </button> -->
+    </div>
+
+  </section>
+
+
+
+  <div class="divider bg-green-300 h-20rem"></div>
 
   <footer class="footer bg-[var(--color-blue-dark)] text-white">
     <div class="container">
@@ -214,6 +313,7 @@
     </div>
   </footer>
 
+  <script src="/src/itc-slider/itc-slider.min.js" defer></script>
   <script type="module" src="/main.js"></script>
 </body>
 

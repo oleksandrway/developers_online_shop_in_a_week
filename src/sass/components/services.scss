@@ -30,8 +30,7 @@
 
     &:hover {
       .services__card-icon {
-        // transform: scale(1.1);
-        background-color: rgba(0, 0, 0, 0.08);
+        background-color: var(--hover-bg);
         border-radius: 1rem;
       }
     }
