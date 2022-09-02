@@ -1,0 +1,116 @@
+.more-info {
+  padding: 20.8rem 0 10rem 0;
+  position: relative;
+  overflow: hidden;
+
+  @screen <lg {
+    padding: 4.3rem 0 5rem 0;
+  }
+
+  .container {
+    display: flex;
+
+    @screen <md {
+      flex-direction: column;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+    width: 6rem;
+    height: 6rem;
+
+    @screen <2xl {
+      display: none;
+    }
+  }
+
+  &__title {
+    text-align: left;
+
+    @screen <md {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    font-size: 1.8rem;
+    line-height: 1.4;
+
+    @screen <lg {
+      line-height: 1.7;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 5.2rem;
+    padding: 2.2rem 5.6rem;
+
+    @screen <sm {
+      width: 100%;
+    }
+
+    &:hover {
+      border: 0.25rem solid var(--color-blue-dark);
+      padding: 1.95rem 5.35rem;
+    }
+
+    &:active {
+      background-color: var(--color-blue-dark);
+    }
+  }
+
+  &__mobile-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    margin-bottom: 3.1rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__desk-img {
+    margin-right: -23rem;
+    position: relative;
+    height: auto;
+    padding-top: 0.4rem;
+    flex: 0 0 59%;
+
+    @screen <lg {
+      margin-right: -10rem;
+    }
+
+    @screen <md {
+      flex: 0 0 100%;
+      margin-right: 0;
+    }
+  }
+
+  .circles {
+    position: absolute;
+    top: -7.7rem;
+    right: 16.5rem;
+
+    @screen <lg {
+      top: -2.7rem;
+    }
+
+    @screen <md {
+      height: 2rem;
+      z-index: -1;
+      top: 6%;
+      right: 38%;
+    }
+  }
+  .order {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}

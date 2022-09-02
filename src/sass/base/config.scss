@@ -47,16 +47,3 @@ body {
     }
   }
 }
-
-.title-1 {
-}
-
-.title-2 {
-  font-weight: 800;
-  font-size: 3.2rem;
-  text-align: center;
-
-  @screen <md {
-    font-size: 2.3rem;
-  }
-}
