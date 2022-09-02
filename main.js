@@ -1,6 +1,8 @@
 import 'virtual:windi.css'
 import './src/sass/main.scss'
 
+import { ItcSlider } from '/src/itc-slider/itc-slider.min.js'
+
 // menu
 
 const menuSwitcher = document.querySelector('.menu-btn')
@@ -24,3 +26,11 @@ cards.forEach((arrow) => {
   },
   )
 })
+
+// examples-slider
+
+if (window.innerWidth < 768) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const examplesSlider = new ItcSlider('.examples__slider')
+  })
+}
