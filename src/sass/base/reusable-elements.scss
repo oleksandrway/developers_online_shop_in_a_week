@@ -3,6 +3,20 @@
 }
 
 .title-1 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 1.26;
+  color: #484848;
+
+  @screen <md {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  @screen <sm {
+    text-transform: uppercase;
+  }
 }
 
 .title-2 {

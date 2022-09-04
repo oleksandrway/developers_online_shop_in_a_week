@@ -20,7 +20,7 @@
 
   &__card {
     background-color: #fff;
-    padding: 0.4rem 3.2rem;
+    padding: 0.3rem 3.2rem;
     border-radius: 15px;
 
     @screen <md {
@@ -80,7 +80,7 @@
     }
 
     &:not(&:last-child) {
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
       @screen <md {
         margin-bottom: 1rem;
       }
