@@ -489,10 +489,19 @@
     <div class="container container-discussion">
       <h2 class="title-2 discussion__title">Обсудить проект</h2>
       <div class="discussion__desc">Расскажите о своих бизнес-целях и мы поможем вам в их достижении</div>
-      <form action="#" class="discussion__form">
-        <input type="text" placeholder="Имя" class="discussion__input  ">
-        <input type="tel" placeholder="Telegram/Viber" class="discussion__input  ">
-        <input type="email" placeholder="Email" class="discussion__input ">
+      <form action="#" class="discussion__form form">
+        <div class="form__item">
+          <input name="name" type="text" placeholder="Имя" class="discussion__input  ">
+        </div>
+        <div class="form__item">
+          <input name="phone" type="tel" placeholder="Telegram/Viber" class="discussion__input  ">
+        </div>
+        <div class="form__item">
+          <input name="email" type="email" placeholder="Email" class="discussion__input ">
+        </div>
+
+
+
         <button class="discussion__btn btn">Отправить</button>
       </form>
 
