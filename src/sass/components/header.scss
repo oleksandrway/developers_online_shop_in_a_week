@@ -3,7 +3,13 @@
     transition: all 0.9s;
 
     @screen <md {
-      @apply flex-col  fixed  top-4.4rem  left-0  w-[100%]   bg-[var(--color-blue-dark)] items-center py-4.2rem gap-4.2rem h-0 py-0;
+      gap: 2.5rem;
+      font-size: 1.2rem;
+    }
+
+    @screen <sm {
+      @apply flex-col  absolute  top-4.4rem  left-0  w-[100%]   bg-[var(--color-blue-dark)] items-center py-5rem gap-4.2rem h-0 py-0
+      text-1.7rem font-bold;
     }
   }
 }
@@ -19,9 +25,9 @@
     }
   }
 
-  &--hidden {
-    @screen <md {
-      @apply h-27.4rem py-4.2rem;
+  &--active {
+    @screen <sm {
+      @apply h-31.4rem py-4.2rem;
     }
   }
 

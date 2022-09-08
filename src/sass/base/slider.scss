@@ -14,7 +14,15 @@
     bottom: 0;
 
     &:hover {
-      background-color: var(--hover-bg);
+      background-color: var(--color-blue-dark);
+      path {
+        stroke: white;
+      }
+    }
+
+    &:before {
+      width: 0;
+      height: 0;
     }
   }
 
@@ -24,13 +32,6 @@
     @screen <lg {
       left: calc(50% - 11.6rem);
     }
-
-    &:before {
-      height: 2.6rem;
-      width: 1.4rem;
-      background-size: 1.4rem;
-      background-image: url("/arrow-left.svg");
-    }
   }
 
   .right {
@@ -38,13 +39,6 @@
 
     @screen <lg {
       right: calc(50% - 11.6rem);
-    }
-
-    &:before {
-      height: 2.6rem;
-      width: 1.4rem;
-      background-size: 1.4rem;
-      background-image: url("/arrow-right.svg");
     }
   }
 }

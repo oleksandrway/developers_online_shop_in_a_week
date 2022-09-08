@@ -9,28 +9,19 @@ const menuSwitcher = document.querySelector('.menu-btn')
 const menu = document.querySelector('.menu')
 
 menuSwitcher.addEventListener('click', () => {
-  // menu.classList.toggle('<md:h-0')
-  menu.classList.toggle('menu--hidden')
+  menu.classList.toggle('menu--active')
 },
 )
 
 // services cards
 
-const cards = document.querySelectorAll('.services__card')
+const cardHeaders = document.querySelectorAll('.services__card-header')
 
-cards.forEach((arrow) => {
-  arrow.addEventListener('click', () => {
-    const card = arrow.closest('.services__card')
+cardHeaders.forEach((cardHeader) => {
+  cardHeader.addEventListener('click', () => {
+    const card = cardHeader.closest('.services__card')
     card.classList.toggle('services__card--active')
     card.classList.toggle('services__card--disabled')
   },
   )
 })
-
-// examples-slider
-
-if (window.innerWidth < 768) {
-  document.addEventListener('DOMContentLoaded', () => {
-    const examplesSlider = new ItcSlider('.examples__slider')
-  })
-}

@@ -17,12 +17,12 @@
 
 <body>
 
-  <header class="   text-white  py-1.7rem  bg-[var(--color-blue-dark)] relative <md:py-0">
+  <header class="   text-white  py-1.8rem  bg-[var(--color-blue-dark)] relative <md:py-0">
     <div class="container container-header flex justify-between items-center">
-      <img src="/logo.svg" alt="" class="header__logo max-w-24rem <md:max-w-13.5rem ">
+      <img src="/logo.svg" alt="" class="header__logo max-w-24.1rem <md:max-w-13.5rem ">
       <nav>
         <ul
-          class="header__menu menu flex gap-3.8rem items-stretch align-middle text-base-1.6rem  <lg:mr-2rem overflow-hidden h-5rem ">
+          class="header__menu menu z-10 flex gap-3.55rem items-stretch align-middle text-base-1.6rem  <lg:mr-2rem overflow-hidden h-5rem font-semibold ">
           <li class="menu-item flex items-center">
             <a href="#">Услуги</a>
           </li>
@@ -36,12 +36,12 @@
             <a href="#">Дизайнеры</a>
           </li>
           <li class="menu-item <lg:hidden flex items-center ">
-            <button class="btn  py-1.15rem px-4.2rem  hover:border-0.25rem hover:border-white hover:py-0.75rem hover:px-3.75rem 
+            <button class="btn  py-1.15rem px-4.2rem  hover:border-0.25rem hover:border-white hover:py-0.9rem hover:px-3.9rem 
               active:bg-white active:text-[var(--color-blue-dark)]  ">Заказать</button>
           </li>
 
         </ul>
-        <button class="menu-btn  mr-0.8rem  hidden py-2rem  <md:flex <md:gap-0.5rem">
+        <button class="menu-btn  mr-0.8rem  hidden py-2rem  <sm:flex <sm:gap-0.5rem">
           <span></span><span></span><span></span>
         </button>
       </nav>
@@ -287,8 +287,16 @@
 
 
 
-        <button class="slider__control slider-btn left " data-slide="prev"></button>
-        <button class="slider__control slider-btn right" data-slide="next"></button>
+        <button class="slider__control slider-btn left " data-slide="prev">
+          <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="slider__control slider-btn right" data-slide="next"> <svg width="14" height="26"
+            viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
     </div>
@@ -302,9 +310,71 @@
       <img src="/examples/sheet.png" alt="" class="sheet">
       <img src="/examples/circle.png" alt="" class="circle ">
 
-      <div class="slider examples__slider">
+      <div class="slider examples__slider" data-slider="itc-slider">
         <div class="slider__wrapper">
           <div class="slider__items">
+            <div class="slider__item  examples__slider-item">
+              <div class="examples__card ">
+                <img src="/examples/wholesale.png" alt="wholesale image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для оптовых покупок</p>
+                  </div>
+                </div>
+              </div>
+              <div class="examples__card">
+                <img src="/examples/hairdresser.png" alt="hairdresser image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для флористов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="examples__card">
+                <img src="/examples/cake.png" alt="cake image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для парикмахеров</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__item examples__slider-item">
+              <div class="examples__card">
+                <img src="/examples/florist.png" alt="florist image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для визажистов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="examples__card">
+                <img src="/examples/make-up.png" alt="make-up image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для кондитеров</p>
+                  </div>
+                </div>
+              </div>
+              <div class="examples__card">
+                <img src="/examples/painter.png" alt="painter image">
+                <div class="examples__card-hover hover">
+                  <div class="hover__content">
+                    <h3>Онлайн-магазин</h3>
+                    <p>для художников</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- copy of first 2 item because of slider -->
             <div class="slider__item  examples__slider-item">
               <div class="examples__card ">
                 <img src="/examples/wholesale.png" alt="wholesale image">
@@ -372,8 +442,16 @@
           </div>
         </div>
 
-        <button class="slider__control left md:hidden" data-slide="prev"></button>
-        <button class="slider__control right md:hidden" data-slide="next"></button>
+        <button class="slider__control left md:hidden" data-slide="prev">
+          <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="slider__control right md:hidden" data-slide="next">
+          <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
 
     </div>
