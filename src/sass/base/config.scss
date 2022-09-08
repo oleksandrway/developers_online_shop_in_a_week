@@ -33,6 +33,11 @@ body {
   &-stages {
     max-width: 150rem;
   }
+
+  &-discussion {
+    max-width: 52rem;
+  }
+
   @screen <sm {
     padding: 0 2rem;
 

@@ -9,10 +9,6 @@
 
   .container {
     display: flex;
-
-    @screen <md {
-      flex-direction: column;
-    }
   }
 
   .circle {
@@ -26,6 +22,12 @@
       display: none;
     }
   }
+
+  // &__content {
+  //   @screen <md {
+  //     text-align: center;
+  //   }
+  // }
 
   &__title {
     text-align: left;
@@ -49,8 +51,12 @@
     margin-top: 5.2rem;
     padding: 2.2rem 5.6rem;
 
-    @screen <sm {
+    @screen <md {
       width: 100%;
+      max-width: 34rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &:hover {
@@ -87,8 +93,7 @@
     }
 
     @screen <md {
-      flex: 0 0 100%;
-      margin-right: 0;
+      display: none;
     }
   }
 

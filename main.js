@@ -1,7 +1,7 @@
 import 'virtual:windi.css'
 import './src/sass/main.scss'
 
-import { ItcSlider } from '/src/itc-slider/itc-slider.min.js'
+import '/src/itc-slider/itc-slider.min.js'
 
 // menu
 
