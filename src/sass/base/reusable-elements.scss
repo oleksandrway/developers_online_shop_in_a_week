@@ -1,6 +1,28 @@
 .btn {
   @apply uppercase rounded-0.5rem  bg-[var(--color-green)] font-bold text-1.5rem text-white;
 
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 0.25rem var(--color-blue-dark);
+  }
+
+  &:active {
+    color: #fff;
+    background-color: var(--color-blue-dark);
+  }
+
+  &-white-hover {
+    &:hover {
+      box-shadow: inset 0px 0px 0px 0.25rem #fff;
+    }
+
+    &:active {
+      background-color: #fff;
+      color: var(--color-blue-dark);
+    }
+  }
+
   @screen <sm {
     border-radius: 1rem;
   }

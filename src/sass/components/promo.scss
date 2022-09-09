@@ -122,19 +122,6 @@
       width: 100%;
       max-width: 34rem;
     }
-
-    &:hover {
-      border: 0.25rem solid var(--color-blue-dark);
-      padding: 1.95rem 8.95rem;
-
-      @screen <md {
-        padding: 1.45rem 7.95rem;
-      }
-    }
-
-    &:active {
-      background-color: var(--color-blue-dark);
-    }
   }
 
   &__img {

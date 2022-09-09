@@ -20,12 +20,12 @@ export const fieldsValidationRules = [
     rules: [
       {
         ruleName: 'required',
-        SpecificErrorMessage: 'i said name is a required field',
+        SpecificErrorMessage: 'это поле обязательно',
       },
       {
         ruleName: 'minLength',
         value: 3,
-        SpecificErrorMessage: 'length of title  should be at least {value} characters',
+        SpecificErrorMessage: 'длина должна быть не менее 3 символов',
 
       },
     ],
@@ -35,18 +35,24 @@ export const fieldsValidationRules = [
     inputName: 'email',
     rules: [{
       ruleName: 'required',
+      SpecificErrorMessage: 'это поле обязательно',
     },
     {
       ruleName: 'email',
+      SpecificErrorMessage: 'пожалуйста введите ваш электронный адрес',
+
     }],
   },
   {
     inputName: 'phone',
     rules: [{
       ruleName: 'required',
+      SpecificErrorMessage: 'это поле обязательно',
     },
     {
       ruleName: 'phone',
+      SpecificErrorMessage: 'пожалуйста введите  номер формате 0432386689',
+
     }],
   },
 
