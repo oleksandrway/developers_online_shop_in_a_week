@@ -1,37 +1,96 @@
 .header {
-  &__menu {
-    transition: all 0.9s;
+  color: white;
+  padding: 1.8rem 0 1.8rem 0;
+  position: relative;
+
+  max-width: 100%;
+
+  @screen <md {
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    max-width: 24.1rem;
 
     @screen <md {
+      max-width: 15.5rem;
+    }
+  }
+
+  &__menu {
+    transition: all 0.9s;
+    z-index: 10;
+    display: flex;
+    gap: 3.55rem;
+    align-items: stretch;
+    font-size: 1.6rem;
+    overflow: hidden;
+    height: 5rem;
+    font-weight: 600;
+
+    @screen <lg {
       gap: 2.5rem;
+    }
+    @screen <md {
       font-size: 1.2rem;
     }
 
     @screen <sm {
-      @apply flex-col  absolute  top-4.4rem  left-0  w-[100%]   bg-[var(--color-blue-dark)] items-center py-5rem gap-4.2rem h-0 py-0
-      text-1.7rem font-bold;
+      position: absolute;
+      top: 4.4rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: var(--color-blue-dark);
+      font-size: 1.7rem;
+      font-weight: bold;
+      align-items: center;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &--active {
+      @screen <sm {
+        height: 31.4rem;
+        padding-bottom: 4rem;
+        padding-top: 4rem;
+      }
+    }
+
+    &-btn {
+      margin-right: 0.8rem;
+      padding: 2rem 0;
+      display: flex;
+      gap: 0.5rem;
+
+      @screen sm {
+        display: none;
+      }
+
+      span {
+        display: block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
     }
   }
 }
 
 .menu {
-  &-btn {
-    span {
-      display: block;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background-color: #fff;
-    }
-  }
-
-  &--active {
-    @screen <sm {
-      @apply h-31.4rem py-4.2rem;
-    }
-  }
-
-  &-item {
+  &__item {
+    display: flex;
+    align-items: center;
     a {
       position: relative;
 
@@ -52,6 +111,23 @@
           width: 100%;
         }
       }
+    }
+  }
+
+  &__btn {
+    padding: 1.15rem 4.2rem;
+    @screen <lg {
+      display: none;
+    }
+
+    &:hover {
+      border: 0.25rem solid #fff;
+      padding: 0.9rem 3.9rem;
+    }
+
+    &:active {
+      background-color: #fff;
+      color: var(--color-blue-dark);
     }
   }
 }

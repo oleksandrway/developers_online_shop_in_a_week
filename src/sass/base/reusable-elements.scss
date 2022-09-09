@@ -1,5 +1,9 @@
 .btn {
   @apply uppercase rounded-0.5rem  bg-[var(--color-green)] font-bold text-1.5rem text-white;
+
+  @screen <sm {
+    border-radius: 1rem;
+  }
 }
 
 .title-1 {

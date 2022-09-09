@@ -93,6 +93,12 @@
         margin-bottom: 1.4rem;
       }
     }
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--color-blue-dark);
+      color: #292929;
+    }
   }
 
   &__btn {
@@ -101,6 +107,15 @@
     @screen <sm {
       width: 100%;
       max-width: 34rem;
+    }
+
+    &:hover {
+      border: 0.25rem solid var(--color-blue-dark);
+      padding: 1.95rem 8.25rem;
+    }
+
+    &:active {
+      background-color: var(--color-blue-dark);
     }
   }
 }

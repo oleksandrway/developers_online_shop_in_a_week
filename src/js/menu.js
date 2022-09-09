@@ -1,8 +1,8 @@
 
-const menuSwitcher = document.querySelector('.menu-btn')
+const menuSwitcher = document.querySelector('.header__menu-btn')
 const menu = document.querySelector('.menu')
 
 menuSwitcher.addEventListener('click', () => {
-  menu.classList.toggle('menu--active')
+  menu.classList.toggle('header__menu--active')
 },
 )
