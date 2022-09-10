@@ -11,13 +11,6 @@
     padding: 28rem 0 4.1rem 0;
   }
 
-  .container {
-    display: flex;
-    @screen <sm {
-      flex-direction: column-reverse;
-    }
-  }
-
   .sheet-left {
     position: absolute;
     bottom: 9.4rem;
@@ -81,10 +74,6 @@
     z-index: -1;
 
     @screen <lg {
-      // width: 29.4rem;
-      // height: 26.3rem;
-      // top: 14rem;
-      // right: -11rem;
       left: 60%;
     }
 
@@ -109,19 +98,6 @@
     line-height: 1.4;
     max-width: 42.5rem;
     margin-bottom: 5.6rem;
-  }
-
-  &__btn {
-    padding: 2.2rem 9.2rem;
-
-    @screen <md {
-      padding: 1.7rem 8.2rem;
-    }
-
-    @screen <sm {
-      width: 100%;
-      max-width: 34rem;
-    }
   }
 
   &__img {

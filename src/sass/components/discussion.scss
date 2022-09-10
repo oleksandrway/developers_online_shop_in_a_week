@@ -96,17 +96,8 @@
 
     &:focus {
       outline: none;
-      border: 2px solid var(--color-blue-dark);
+      border: 2.5px solid var(--color-blue-dark);
       color: #292929;
-    }
-  }
-
-  &__btn {
-    padding: 2.2rem 8.5rem;
-
-    @screen <sm {
-      width: 100%;
-      max-width: 34rem;
     }
   }
 }

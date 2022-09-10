@@ -1,7 +1,12 @@
 .btn {
-  @apply uppercase rounded-0.5rem  bg-[var(--color-green)] font-bold text-1.5rem text-white;
+  @apply uppercase font-bold text-1.5rem text-white
+  rounded-0.5rem  bg-[var(--color-green)];
 
   transition: all 0.2s;
+
+  @screen <sm {
+    border-radius: 1rem;
+  }
 
   &:hover {
     box-shadow: inset 0px 0px 0px 0.25rem var(--color-blue-dark);
@@ -12,7 +17,7 @@
     background-color: var(--color-blue-dark);
   }
 
-  &-white-hover {
+  &--hover-white {
     &:hover {
       box-shadow: inset 0px 0px 0px 0.25rem #fff;
     }
@@ -23,8 +28,21 @@
     }
   }
 
-  @screen <sm {
-    border-radius: 1rem;
+  &--small {
+    width: 17rem;
+    height: 3.8rem;
+    padding: 1.1rem 4rem;
+  }
+
+  &--big {
+    min-width: 27rem;
+    min-height: 6rem;
+    padding: 2.2rem 5.6rem;
+
+    @screen <sm {
+      width: 100%;
+      max-width: 34rem;
+    }
   }
 }
 
