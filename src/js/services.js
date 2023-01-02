@@ -1,11 +1,15 @@
 
-const cardHeaders = document.querySelectorAll('.services__card-header')
+const cards = document.querySelectorAll('.services__card')
 
-cardHeaders.forEach((cardHeader) => {
-  cardHeader.addEventListener('click', () => {
-    const card = cardHeader.closest('.services__card')
+cards.forEach((card) => {
+  card.addEventListener('click', () => {
     card.classList.toggle('services__card--active')
-    card.classList.toggle('services__card--disabled')
+    const body = card.querySelector('.services__card-body')
+    if (body.style.maxHeight)
+      body.style.maxHeight = null
+
+    else
+      body.style.maxHeight = `${body.scrollHeight}px`
   },
   )
 })
